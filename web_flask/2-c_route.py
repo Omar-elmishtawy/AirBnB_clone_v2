@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Flassk framework"""
+"""sk framework"""
 
 from flask import Flask
 
@@ -15,17 +15,18 @@ def hello_hbnb():
 
 
 @app.route('/hbnb', strict_slashes=False)
-def display_hbnb():
+def hbnb():
     """hbnb
     """
     return "HBNB"
 
+
 @app.route('/c/<text>', strict_slashes=False)
 def c_fun(text):
-    """C is fun
+    """c text
     """
-    dtext = text.replace("_", " ")
-    return "C {}".format(dtext)
+    display_text = text.replace('_', ' ')
+    return "C {}".format(display_text)
 
 
 if __name__ == '__main__':
