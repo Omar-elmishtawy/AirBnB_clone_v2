@@ -24,8 +24,8 @@ def display_hbnb():
 def c_fun(text):
     """C is fun
     """
-    text = text.replace("_", " ")
-    return "C {}".format(text)
+    dtext = text.replace("_", " ")
+    return "C {}".format(dtext)
 
 
 if __name__ == '__main__':
