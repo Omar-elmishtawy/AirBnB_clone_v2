@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""Flask framwork"""
 from flask import Flask
 
 app = Flask(__name__)
